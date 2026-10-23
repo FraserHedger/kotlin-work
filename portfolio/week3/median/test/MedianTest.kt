@@ -15,6 +15,29 @@ class MedianTest : FreeSpec({
             median(listOf())
         }
     }
+    
 
     // Write four more tests here
+
+    "for a list only containing one element, that element should be the median" {
+        median(listOf(3f)) shouldBe 3f
+    }
+
+    "works for a list containing 2 elements"{
+        median(listOf(3f, 5f)) shouldBe 4f
+    }
+
+    "works for a list containing 3 elements"{
+        median(listOf(3f, 7f, 5f)) shouldBe 5f
+    }
+
+    "works for a list containing 4 elements"{
+        median(listOf(9f, 5f, 7f, 3f)) shouldBe 6f
+    }
+
+    
+    
+
+   
+
 })
